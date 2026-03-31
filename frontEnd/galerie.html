@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtPortfolio - Galerie</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="logo">
+            <span>🎨</span>
+            <div>
+                <h1>ArtPortfolio</h1>
+                <p>Galerie artistes étudiants</p>
+            </div>
+        </div>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galerie.html" class="active">Galerie</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Galerie d'Œuvres</h2>
+        <p>Découvrez les créations uniques de nos artistes étudiants talentueux</p>
+    </section>
+
+    <!-- FILTRES -->
+    <section class="filtres">
+        <button class="filtre-btn active" data-filtre="tout">Tout</button>
+        <button class="filtre-btn" data-filtre="abstrait">Abstrait</button>
+        <button class="filtre-btn" data-filtre="photographie">Photographie</button>
+        <button class="filtre-btn" data-filtre="numerique">Art Numérique</button>
+        <button class="filtre-btn" data-filtre="sculpture">Sculpture</button>
+        <button class="filtre-btn" data-filtre="realisme">Réalisme</button>
+    </section>
+
+    <!-- GALERIE -->
+    <section class="galerie">
+
+        <!-- CARTE 1 -->
+        <div class="carte" data-categorie="abstrait">
+            <img src="images/oeuvre1.jpg" alt="Œuvre abstraite">
+            <div class="carte-info">
+                <span class="categorie">Abstrait</span>
+                <h3>Flux Primaire</h3>
+                <p>par Yasmine Ben Ali</p>
+                <div class="carte-footer">
+                    <span class="prix">450 TND</span>
+                    <button class="btn-contact">Contacter</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARTE 2 -->
+        <div class="carte" data-categorie="photographie">
+            <img src="images/oeuvre2.jpg" alt="Photographie urbaine">
+            <div class="carte-info">
+                <span class="categorie">Photographie</span>
+                <h3>Vertiges Urbains</h3>
+                <p>par Karim Mzoughi</p>
+                <div class="carte-footer">
+                    <span class="prix">180 TND</span>
+                    <button class="btn-contact">Contacter</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARTE 3 -->
+        <div class="carte" data-categorie="numerique">
+            <img src="images/oeuvre3.jpg" alt="Art numérique">
+            <div class="carte-info">
+                <span class="categorie">Art Numérique</span>
+                <h3>Résonances</h3>
+                <p>par Lina Cherif</p>
+                <div class="carte-footer">
+                    <span class="prix">95 TND</span>
+                    <button class="btn-contact">Contacter</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Administration - ArtPortfolio</title>
+    <link rel="stylesheet" href="css/styleADMIN.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1>Administration</h1>
+    <p>Gestion des marges de prix par style artistique</p>
+  </header>
+
+  <section class="info-banner">
+    <p>Ces marges de prix servent de référence pour les artistes lors de la fixation des prix de leurs œuvres. Elles garantissent une cohérence tarifaire tout en tenant compte des spécificités de chaque style.</p>
+  </section>
+
+  <section class="stats">
+    <div class="card green">
+      <h3>Prix moyen le plus élevé</h3>
+      <p class="value">1000 €</p>
+      <span>Sculpture</span>
+    </div>
+    <div class="card blue">
+      <h3>Prix moyen le plus bas</h3>
+      <p class="value">275 €</p>
+      <span>Photographie</span>
+    </div>
+    <div class="card pink">
+      <h3>Styles artistiques</h3>
+      <p class="value">6</p>
+      <span>Catégories actives</span>
+    </div>
+  </section>
+
+  <section class="table-container">
+    <h2>Marges de Prix par Style</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Style</th>
+          <th>Prix Min</th>
+          <th>Prix Max</th>
+          <th>Prix Moyen</th>
+          <th>Description</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="badge">Abstrait</span></td>
+          <td>350 €</td>
+          <td>800 €</td>
+          <td class="highlight">575 €</td>
+          <td>Peintures abstraites sur toile, acrylique ou huile</td>
+          <td><button class="edit-btn">✏️</button></td>
+        </tr>
+        <tr>
+          <td><span class="badge">Photographie</span></td>
+          <td>150 €</td>
+          <td>400 €</td>
+          <td class="highlight">275 €</td>
+          <td>Tirages photographiques professionnels, éditions limitées</td>
+          <td><button class="edit-btn">✏️</button></td>
+        </tr>
+        <tr>
+          <td><span class="badge">Art Numérique</span></td>
+          <td>250 €</td>
+          <td>600 €</td>
+          <td class="highlight">425 €</td>
+          <td>Créations numériques, NFT disponibles</td>
+          <td><button class="edit-btn">✏️</button></td>
+        </tr>
+        <tr>
+          <td><span class="badge">Sculpture</span></td>
+          <td>500 €</td>
+          <td>1500 €</td>
+          <td class="highlight">1000 €</td>
+          <td>Sculptures originales, matériaux variés</td>
+          <td><button class="edit-btn">✏️</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</body>
+</html>

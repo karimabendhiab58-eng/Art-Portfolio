@@ -1,104 +1,156 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Profil Artiste - ArtPortfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sophie Martin – ArtPortfolio</title>
+  <link rel="stylesheet" href="styleART.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div>
-      <img src="logo.png" alt="logo" width="20">
-      <strong>ArtPortfolio</strong>
-      <small>Galerie artistes étudiants</small>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-inner">
+      <div class="brand">
+        <svg class="brand-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.9999 9.33333C18.3681 9.33333 18.6666 9.03486 18.6666 8.66667C18.6666 8.29848 18.3681 8 17.9999 8C17.6317 8 17.3333 8.29848 17.3333 8.66667C17.3333 9.03486 17.6317 9.33333 17.9999 9.33333Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M23.3334 14.6667C23.7016 14.6667 24.0001 14.3682 24.0001 14C24.0001 13.6319 23.7016 13.3334 23.3334 13.3334C22.9652 13.3334 22.6667 13.6319 22.6667 14C22.6667 14.3682 22.9652 14.6667 23.3334 14.6667Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M11.3334 10.6667C11.7016 10.6667 12.0001 10.3682 12.0001 10C12.0001 9.63185 11.7016 9.33337 11.3334 9.33337C10.9652 9.33337 10.6667 9.63185 10.6667 10C10.6667 10.3682 10.9652 10.6667 11.3334 10.6667Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8.66667 17.3333C9.03486 17.3333 9.33333 17.0349 9.33333 16.6667C9.33333 16.2985 9.03486 16 8.66667 16C8.29848 16 8 16.2985 8 16.6667C8 17.0349 8.29848 17.3333 8.66667 17.3333Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M16.0001 2.66663C8.66675 2.66663 2.66675 8.66663 2.66675 16C2.66675 23.3333 8.66675 29.3333 16.0001 29.3333C17.2347 29.3333 18.1974 28.3386 18.1974 27.0826C18.1974 26.5 17.9574 25.9693 17.6147 25.5826C17.2281 25.1973 17.0307 24.7133 17.0307 24.0826C17.0257 23.7892 17.0798 23.4977 17.1897 23.2256C17.2997 22.9535 17.4634 22.7063 17.6709 22.4988C17.8784 22.2912 18.1256 22.1276 18.3977 22.0176C18.6698 21.9076 18.9613 21.8536 19.2547 21.8586H21.9161C25.9841 21.8586 29.3227 18.5213 29.3227 14.4533C29.2867 8.01596 23.2814 2.66663 16.0001 2.66663Z" stroke="#B4D4FF" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="brand-text">
+          <span class="brand-name">ArtPortfolio</span>
+          <span class="brand-subtitle">Galerie artistes étudiants</span>
+        </div>
+      </div>
     </div>
-
-    <nav>
-      <a href="galerie.html">Galerie</a>
-      <a href="exposition.html">Expositions</a>
-      <a href="contact.html">Contact</a>
-      <a href="admin.html">Admin</a>
-    </nav>
   </header>
 
-  <hr>
+  <!-- Main content -->
+  <main class="main">
 
-  <main>
+    <!-- Back link -->
+    <a href="#" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.99992 12.6667L3.33325 8.00004L7.99992 3.33337" stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M12.6666 8H3.33325" stroke="#4A5565" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Retour à la galerie
+    </a>
 
-    <!-- RETOUR -->
-    <p>
-      <a href="galerie.html">&larr; Retour à la galerie</a>
-    </p>
-
-    <!-- PROFIL -->
-    <section id="artist-profile">
-
-      <img id="artist-avatar" src="" alt="avatar" width="100" height="100">
-
-      <div>
-        <small id="artist-category"></small>
-        <h1 id="artist-name"></h1>
-        <p id="artist-bio"></p>
-
-        <a href="contact.html">📩 Contacter l'artiste</a>
+    <!-- Artist hero -->
+    <section class="hero">
+      <div class="hero-inner">
+        <img class="avatar" src="https://placehold.co/192x192" alt="Sophie Martin" />
+        <div class="hero-info">
+          <span class="badge">Abstrait</span>
+          <h1 class="artist-name">Sophie Martin</h1>
+          <p class="artist-bio">Étudiante en beaux-arts spécialisée dans l'art abstrait. Passionnée par les couleurs vibrantes et les formes organiques.</p>
+          <button class="contact-btn">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6667 3.33337H3.33341C2.41294 3.33337 1.66675 4.07957 1.66675 5.00004V15C1.66675 15.9205 2.41294 16.6667 3.33341 16.6667H16.6667C17.5872 16.6667 18.3334 15.9205 18.3334 15V5.00004C18.3334 4.07957 17.5872 3.33337 16.6667 3.33337Z" stroke="#1E3A5F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.3334 5.83337L10.8584 10.5834C10.6011 10.7446 10.3037 10.83 10.0001 10.83C9.69648 10.83 9.39902 10.7446 9.14175 10.5834L1.66675 5.83337" stroke="#1E3A5F" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Contacter l'artiste
+          </button>
+        </div>
       </div>
-
     </section>
 
-    <hr>
+    <!-- Portfolio section -->
+    <section class="portfolio-section">
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-grid">
 
-    <!-- PORTFOLIO -->
-    <section id="artist-works">
-      <h2>Portfolio</h2>
+        <!-- Card 1 -->
+        <div class="artwork-card">
+          <div class="artwork-image">
+            <img src="https://placehold.co/351x351" alt="Échos de Couleur" />
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title">Échos de Couleur</h3>
+            <p class="artwork-desc">Une exploration des émotions à travers des couches de peinture acrylique vibrantes.</p>
+            <div class="artwork-meta">
+              <span class="artwork-year">2024</span>
+              <span class="artwork-price">450 €</span>
+            </div>
+          </div>
+        </div>
 
-      <div id="works-container">
-        <!-- JS rempli ici -->
+        <!-- Card 2 -->
+        <div class="artwork-card">
+          <div class="artwork-image">
+            <img src="https://placehold.co/351x351" alt="Harmonie Chaotique" />
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title">Harmonie Chaotique</h3>
+            <p class="artwork-desc">Contraste entre ordre et désordre exprimé par des formes géométriques et organiques.</p>
+            <div class="artwork-meta">
+              <span class="artwork-year">2024</span>
+              <span class="artwork-price">520 €</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="artwork-card">
+          <div class="artwork-image">
+            <img src="https://placehold.co/351x351" alt="Vibrations" />
+          </div>
+          <div class="artwork-info">
+            <h3 class="artwork-title">Vibrations</h3>
+            <p class="artwork-desc">Énergie pure exprimée à travers des coups de pinceau dynamiques.</p>
+            <div class="artwork-meta">
+              <span class="artwork-year">2025</span>
+              <span class="artwork-price">480 €</span>
+            </div>
+          </div>
+        </div>
+
       </div>
-
     </section>
 
   </main>
 
-  <hr>
-
-  <!-- FOOTER -->
-  <footer>
-
-    <div>
-
-      <div>
-        <img src="logo.png" alt="logo" width="16">
-        <strong>ArtPortfolio</strong>
-        <p>
-          Plateforme dédiée aux artistes étudiants pour partager leurs créations.
-        </p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <div class="footer-brand">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5 7C13.7761 7 14 6.77614 14 6.5C14 6.22386 13.7761 6 13.5 6C13.2239 6 13 6.22386 13 6.5C13 6.77614 13.2239 7 13.5 7Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.5 11C17.7761 11 18 10.7761 18 10.5C18 10.2239 17.7761 10 17.5 10C17.2239 10 17 10.2239 17 10.5C17 10.7761 17.2239 11 17.5 11Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 8C8.77614 8 9 7.77614 9 7.5C9 7.22386 8.77614 7 8.5 7C8.22386 7 8 7.22386 8 7.5C8 7.77614 8.22386 8 8.5 8Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.5 13C6.77614 13 7 12.7761 7 12.5C7 12.2239 6.77614 12 6.5 12C6.22386 12 6 12.2239 6 12.5C6 12.7761 6.22386 13 6.5 13Z" fill="#B4D4FF" stroke="#B4D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C12.926 22 13.648 21.254 13.648 20.312C13.648 19.875 13.468 19.477 13.211 19.187C12.921 18.898 12.773 18.535 12.773 18.062C12.7692 17.8419 12.8098 17.6233 12.8922 17.4192C12.9747 17.2151 13.0975 17.0298 13.2531 16.8741C13.4088 16.7185 13.5941 16.5957 13.7982 16.5132C14.0023 16.4308 14.2209 16.3902 14.441 16.394H16.437C19.488 16.394 21.992 13.891 21.992 10.84C21.965 6.012 17.461 2 12 2Z" stroke="#B4D4FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="footer-brand-name">ArtPortfolio</span>
+        </div>
+        <p class="footer-desc">Plateforme dédiée aux artistes étudiants pour partager et exposer leurs créations.</p>
       </div>
 
-      <div>
-        <strong>Navigation</strong>
-        <p><a href="galerie.html">Galerie</a></p>
-        <p><a href="exposition.html">Expositions</a></p>
-        <p><a href="contact.html">Contact</a></p>
-        <p><a href="admin.html">Admin</a></p>
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#">Galerie</a></li>
+          <li><a href="#">Expositions</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Admin</a></li>
+        </ul>
       </div>
 
-      <div>
-        <strong>Contact</strong>
-        <p>Utilisez notre formulaire pour collaborer.</p>
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact</h4>
+        <p class="footer-desc">Pour toute question ou collaboration,<br>utilisez notre formulaire de contact.</p>
       </div>
-
     </div>
 
-    <hr>
-
-    <p align="center">
-      <small>&copy; 2026 ArtPortfolio</small>
-    </p>
-
+    <div class="footer-bottom">
+      <p>© 2026 ArtPortfolio. Tous droits réservés.</p>
+    </div>
   </footer>
 
 </body>
 </html>
-

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -10,82 +10,167 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <div class="logo">
-            <span>🎨</span>
-            <div>
+        <a href="index.html" class="nav-logo">
+            <div class="nav-logo-text">
                 <h1>ArtPortfolio</h1>
                 <p>Galerie artistes étudiants</p>
             </div>
-        </div>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
+        </a>
+        <ul class="nav-links">
             <li><a href="galerie.html" class="active">Galerie</a></li>
+            <li><a href="expositions.html">Expositions</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="admin.html">Admin</a></li>
         </ul>
     </nav>
 
-    <!-- HERO -->
-    <section class="hero">
-        <h2>Galerie d'Œuvres</h2>
-        <p>Découvrez les créations uniques de nos artistes étudiants talentueux</p>
-    </section>
+    <!-- CONTENU -->
+    <div class="page-wrapper">
 
-    <!-- FILTRES -->
-    <section class="filtres">
-        <button class="filtre-btn active" data-filtre="tout">Tout</button>
-        <button class="filtre-btn" data-filtre="abstrait">Abstrait</button>
-        <button class="filtre-btn" data-filtre="photographie">Photographie</button>
-        <button class="filtre-btn" data-filtre="numerique">Art Numérique</button>
-        <button class="filtre-btn" data-filtre="sculpture">Sculpture</button>
-        <button class="filtre-btn" data-filtre="realisme">Réalisme</button>
-    </section>
+        <!-- HERO -->
+        <div class="hero">
+            <h2>Galerie d'Œuvres</h2>
+            <p>Découvrez les créations uniques de nos artistes étudiants talentueux</p>
+        </div>
+        <!-- FILTRES -->
+<div class="filtres">
+    <button class="filtre-btn active" data-filtre="tout">Tout</button>
+    <button class="filtre-btn" data-filtre="abstrait">Abstrait</button>
+    <button class="filtre-btn" data-filtre="photographie">Photographie</button>
+    <button class="filtre-btn" data-filtre="numerique">Art Numérique</button>
+    <button class="filtre-btn" data-filtre="sculpture">Sculpture</button>
+    <button class="filtre-btn" data-filtre="realisme">Réalisme</button>
+    <button class="filtre-btn" data-filtre="digital">Digital Art</button>
+</div>
 
-    <!-- GALERIE -->
-    <section class="galerie">
+        <!-- GALERIE -->
+        <div class="galerie-grid">
 
-        <!-- CARTE 1 -->
-        <div class="carte" data-categorie="abstrait">
-            <img src="images/oeuvre1.jpg" alt="Œuvre abstraite">
-            <div class="carte-info">
-                <span class="categorie">Abstrait</span>
-                <h3>Flux Primaire</h3>
-                <p>par Yasmine Ben Ali</p>
-                <div class="carte-footer">
-                    <span class="prix">450 TND</span>
-                    <button class="btn-contact">Contacter</button>
+            <div class="carte" data-categorie="abstrait">
+                <img src="https://placehold.co/351x351" alt="Échos de Couleur">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Échos de Couleur</span>
+                        <span class="badge">Abstrait</span>
+                    </div>
+                    <div class="carte-artiste">Sophie Martin</div>
+                    <p class="carte-desc">Une exploration des émotions à travers des couches de peinture acrylique vibrantes.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2024</span>
+                        <span class="carte-prix">450 €</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- CARTE 2 -->
-        <div class="carte" data-categorie="photographie">
-            <img src="images/oeuvre2.jpg" alt="Photographie urbaine">
-            <div class="carte-info">
-                <span class="categorie">Photographie</span>
-                <h3>Vertiges Urbains</h3>
-                <p>par Karim Mzoughi</p>
-                <div class="carte-footer">
-                    <span class="prix">180 TND</span>
-                    <button class="btn-contact">Contacter</button>
+            <div class="carte" data-categorie="abstrait">
+                <img src="https://placehold.co/351x351" alt="Harmonie Chaotique">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Harmonie Chaotique</span>
+                        <span class="badge">Abstrait</span>
+                    </div>
+                    <div class="carte-artiste">Sophie Martin</div>
+                    <p class="carte-desc">Contraste entre ordre et désordre exprimé par des formes géométriques et organiques.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2024</span>
+                        <span class="carte-prix">520 €</span>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- CARTE 3 -->
-        <div class="carte" data-categorie="numerique">
-            <img src="images/oeuvre3.jpg" alt="Art numérique">
-            <div class="carte-info">
-                <span class="categorie">Art Numérique</span>
-                <h3>Résonances</h3>
-                <p>par Lina Cherif</p>
-                <div class="carte-footer">
-                    <span class="prix">95 TND</span>
-                    <button class="btn-contact">Contacter</button>
+            <div class="carte" data-categorie="photographie">
+                <img src="https://placehold.co/351x351" alt="Reflets Urbains">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Reflets Urbains</span>
+                        <span class="badge">Photographie</span>
+                    </div>
+                    <div class="carte-artiste">Lucas Dubois</div>
+                    <p class="carte-desc">Série capturant les reflets dans les vitres des buildings modernes.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2025</span>
+                        <span class="carte-prix">180 €</span>
+                    </div>
                 </div>
             </div>
+
+            <div class="carte" data-categorie="photographie">
+                <img src="https://placehold.co/351x351" alt="Nuit à Paris">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Nuit à Paris</span>
+                        <span class="badge">Photographie</span>
+                    </div>
+                    <div class="carte-artiste">Lucas Dubois</div>
+                    <p class="carte-desc">La beauté nocturne de Paris capturée en longue exposition.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2025</span>
+                        <span class="carte-prix">220 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte" data-categorie="numerique">
+                <img src="https://placehold.co/351x351" alt="Rêve Digital">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Rêve Digital</span>
+                        <span class="badge">Art Numérique</span>
+                    </div>
+                    <div class="carte-artiste">Emma Laurent</div>
+                    <p class="carte-desc">Manipulation digitale créant un monde surréaliste et onirique.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2024</span>
+                        <span class="carte-prix">320 €</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carte" data-categorie="sculpture">
+                <img src="https://placehold.co/351x351" alt="Renaissance">
+                <div class="carte-body">
+                    <div class="carte-header">
+                        <span class="carte-titre">Renaissance</span>
+                        <span class="badge">Sculpture</span>
+                    </div>
+                    <div class="carte-artiste">Thomas Bernard</div>
+                    <p class="carte-desc">Sculpture créée à partir de métaux recyclés symbolisant le renouveau.</p>
+                    <div class="carte-footer">
+                        <span class="carte-annee">2024</span>
+                        <span class="carte-prix">890 €</span>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
-    </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>ArtPortfolio</h3>
+                <p>Plateforme dédiée aux artistes étudiants pour partager et exposer leurs créations.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="expositions.html">Expositions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="admin.html">Admin</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Pour toute question ou collaboration,<br>utilisez notre formulaire de contact.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2026 ArtPortfolio. Tous droits réservés.
+        </div>
+    </footer>
 
     <script src="js/main.js"></script>
 </body>

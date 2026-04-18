@@ -1,14 +1,13 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtPortfolio - Contact</title>
+    <title>ArtPortfolio - Contact & Devis</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <nav>
         <a href="index.html" class="nav-logo">
             <div class="nav-logo-text">
@@ -24,19 +23,15 @@
         </ul>
     </nav>
 
-    <!-- CONTENU -->
     <div class="page-wrapper">
 
-        <!-- HERO -->
         <div class="hero">
             <h2>Contactez-nous</h2>
-            <p>Une question, une collaboration ou un projet ? N'hésitez pas à nous contacter</p>
+            <p>Une question ou une demande de devis pour une œuvre ?</p>
         </div>
 
-        <!-- SECTION CONTACT -->
         <div class="contact-section">
 
-            <!-- INFORMATIONS -->
             <div class="contact-infos">
                 <h3>Informations</h3>
 
@@ -57,86 +52,63 @@
                 </div>
 
                 <div class="info-collab">
-                    <h4>Types de collaboration</h4>
-                    <ul>
-                        <li>• Expositions et événements</li>
-                        <li>• Commandes d'œuvres</li>
-                        <li>• Partenariats artistiques</li>
-                        <li>• Questions générales</li>
-                    </ul>
+                    <h4>Mise en relation</h4>
+                    <p style="font-size: 13px; color: #666;">Les demandes de devis sont transmises directement aux artistes étudiants via notre API.</p>
                 </div>
             </div>
 
-            <!-- FORMULAIRE -->
             <div class="contact-form">
+                <form id="contact-form">
+                    <input type="hidden" name="user_id" id="artiste_id_input" value="">
 
-                <div class="form-row">
-                    <div class="form-group">
-                        <label>Nom complet *</label>
-                        <input type="text" placeholder="Jean Dupont">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Nom complet *</label>
+                            <input type="text" name="sender_name" id="sender_name" placeholder="Jean Dupont" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" name="sender_email" id="sender_email" placeholder="jean@exemple.fr" required>
+                        </div>
                     </div>
+
                     <div class="form-group">
-                        <label>Email *</label>
-                        <input type="email" placeholder="jean@exemple.fr">
+                        <label>Type de collaboration *</label>
+                        <select name="collab_type" id="collab_type" required>
+                            <option value="">Choisir un type</option>
+                            <option value="Exposition">Expositions et événements</option>
+                            <option value="Commande">Commandes d'œuvres</option>
+                            <option value="Partenariat">Partenariats artistiques</option>
+                            <option value="Devis">Demande de devis spécifique</option>
+                        </select>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label>Type de collaboration *</label>
-                    <select>
-                        <option value="">Choisir un type</option>
-                        <option>Expositions et événements</option>
-                        <option>Commandes d'œuvres</option>
-                        <option>Partenariats artistiques</option>
-                        <option>Questions générales</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label>Sujet *</label>
+                        <input type="text" name="subject" id="subject" placeholder="Sujet de votre message" required>
+                    </div>
 
-                <div class="form-group">
-                    <label>Sujet *</label>
-                    <input type="text" placeholder="Sujet de votre message">
-                </div>
+                    <div class="form-group">
+                        <label>Message *</label>
+                        <textarea name="message" id="message" rows="6" placeholder="Décrivez votre projet ou l'œuvre qui vous intéresse..." required></textarea>
+                    </div>
 
-                <div class="form-group">
-                    <label>Message *</label>
-                    <textarea rows="6" placeholder="Décrivez votre demande..."></textarea>
-                </div>
-
-                <button class="btn-primary" style="width:100%;">
-                    Envoyer le message
-                </button>
-
+                    <button type="submit" class="btn-primary" style="width:100%;">
+                        Envoyer le message
+                    </button>
+                </form>
             </div>
 
         </div>
-
     </div>
 
-    <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>ArtPortfolio</h3>
-                <p>Plateforme dédiée aux artistes étudiants pour partager et exposer leurs créations.</p>
-            </div>
-            <div class="footer-nav">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="expositions.html">Expositions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="admin.html">Admin</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p>Pour toute question ou collaboration,<br>utilisez notre formulaire de contact.</p>
-            </div>
-        </div>
         <div class="footer-bottom">
             © 2026 ArtPortfolio. Tous droits réservés.
         </div>
     </footer>
 
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

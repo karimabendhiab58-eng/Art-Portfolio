@@ -9,7 +9,10 @@
 <body>
 
     <nav>
-        <a href="index.html" class="nav-logo">
+       <a href="galerie.html" class="nav-logo">
+            <div class="logo-icon">
+                <img src="http://127.0.0.1:8000/storage/oeuvres/logo.jpeg" alt="Logo">
+            </div>
             <div class="nav-logo-text">
                 <h1>ArtPortfolio</h1>
                 <p>Galerie artistes étudiants</p>
@@ -17,24 +20,21 @@
         </a>
         <ul class="nav-links">
             <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="expositions.html">Expositions</a></li>
+            <li><a href="Expositions_Virtuelles.html">Expositions</a></li>
             <li><a href="contact.html" class="active">Contact</a></li>
             <li><a href="admin.html">Admin</a></li>
         </ul>
     </nav>
 
     <div class="page-wrapper">
-
         <div class="hero">
             <h2>Contactez-nous</h2>
             <p>Une question ou une demande de devis pour une œuvre ?</p>
         </div>
 
         <div class="contact-section">
-
             <div class="contact-infos">
                 <h3>Informations</h3>
-
                 <div class="info-item">
                     <div class="info-icon">📧</div>
                     <div>
@@ -42,7 +42,6 @@
                         <p>ArtPortfolio2026@gmail.com</p>
                     </div>
                 </div>
-
                 <div class="info-item">
                     <div class="info-icon">🏢</div>
                     <div>
@@ -50,7 +49,6 @@
                         <p>Avenue de la Corniche<br>Tunisia, Monastir</p>
                     </div>
                 </div>
-
                 <div class="info-collab">
                     <h4>Mise en relation</h4>
                     <p style="font-size: 13px; color: #666;">Les demandes de devis sont transmises directement aux artistes étudiants via notre API.</p>
@@ -59,22 +57,20 @@
 
             <div class="contact-form">
                 <form id="contact-form">
-                    <input type="hidden" name="user_id" id="artiste_id_input" value="">
-
                     <div class="form-row">
                         <div class="form-group">
                             <label>Nom complet *</label>
-                            <input type="text" name="sender_name" id="sender_name" placeholder="Jean Dupont" required>
+                            <input type="text" name="nom" id="nom" placeholder="Votre nom" required>
                         </div>
                         <div class="form-group">
                             <label>Email *</label>
-                            <input type="email" name="sender_email" id="sender_email" placeholder="jean@exemple.fr" required>
+                            <input type="email" name="email" id="email" placeholder="votre@email.com" required>
                         </div>
                     </div>
 
                     <div class="form-group">
                         <label>Type de collaboration *</label>
-                        <select name="collab_type" id="collab_type" required>
+                        <select name="type_collaboration" id="type_collaboration" required>
                             <option value="">Choisir un type</option>
                             <option value="Exposition">Expositions et événements</option>
                             <option value="Commande">Commandes d'œuvres</option>
@@ -85,12 +81,12 @@
 
                     <div class="form-group">
                         <label>Sujet *</label>
-                        <input type="text" name="subject" id="subject" placeholder="Sujet de votre message" required>
+                        <input type="text" name="sujet" id="sujet" placeholder="Sujet de votre message" required>
                     </div>
 
                     <div class="form-group">
                         <label>Message *</label>
-                        <textarea name="message" id="message" rows="6" placeholder="Décrivez votre projet ou l'œuvre qui vous intéresse..." required></textarea>
+                        <textarea name="message" id="message" rows="6" placeholder="Décrivez votre projet..." required></textarea>
                     </div>
 
                     <button type="submit" class="btn-primary" style="width:100%;">
@@ -98,7 +94,6 @@
                     </button>
                 </form>
             </div>
-
         </div>
     </div>
 

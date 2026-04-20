@@ -1,16 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArtPortfolio - Expositions</title>
+    <title>ArtPortfolio - Expositions Virtuelles</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <nav>
-        <a href="index.html" class="nav-logo">
+        <a href="galerie.html" class="nav-logo">
+            <div class="logo-icon">
+                <img src="http://127.0.0.1:8000/storage/oeuvres/logo.jpeg" alt="Logo">
+            </div>
             <div class="nav-logo-text">
                 <h1>ArtPortfolio</h1>
                 <p>Galerie artistes étudiants</p>
@@ -18,169 +20,85 @@
         </a>
         <ul class="nav-links">
             <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="expositions.html" class="active">Expositions</a></li>
+            <li><a href="Expositions_Virtuelles.html" class="active">Expositions</a></li>
             <li><a href="contact.html">Contact</a></li>
             <li><a href="admin.html">Admin</a></li>
         </ul>
     </nav>
 
-    <!-- CONTENU -->
     <div class="page-wrapper">
-
-        <!-- HERO -->
-        <div class="hero">
+        <header class="hero-section">
             <h2>Expositions Virtuelles</h2>
             <p>Découvrez nos expositions thématiques mettant en valeur le talent de nos artistes étudiants</p>
-        </div>
+        </header>
 
-        <!-- LISTE EXPOSITIONS -->
-        <div class="expositions-liste">
-
-            <!-- EXPOSITION 1 -->
-            <div class="expo-carte">
-                <img src="https://placehold.co/372x558" alt="Jeunes Talents 2025">
-                <div class="expo-info">
-                    <div class="expo-header">
-                        <div>
-                            <div class="expo-titre-row">
-                                <h3>Jeunes Talents 2025</h3>
-                                <span class="badge-statut">Terminée</span>
-                            </div>
-                            <div class="expo-date">
-                                📅 1 avril 2025 - 15 mai 2025
-                            </div>
-                        </div>
-                    </div>
-                    <p class="expo-desc">Exposition collective présentant les œuvres les plus prometteuses de nos étudiants en arts.</p>
-                    <div class="expo-oeuvres">
-                        <span class="expo-nb">🖼️ 5 œuvre(s) exposée(s)</span>
-                        <div class="expo-thumbnails">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                        </div>
-                    </div>
+        <main id="expos-container">
+            <section class="expo-item">
+                
+                <div class="expo-visual">
+                    <img src="http://127.0.0.1:8000/storage/oeuvres/pixel_medina.jpg" alt="Le Château Enchanté" class="main-img">
                 </div>
-            </div>
 
-            <!-- EXPOSITION 2 -->
-            <div class="expo-carte">
-                <img src="https://placehold.co/372x558" alt="Visions Urbaines">
-                <div class="expo-info">
-                    <div class="expo-header">
-                        <div>
-                            <div class="expo-titre-row">
-                                <h3>Visions Urbaines</h3>
-                                <span class="badge-statut">Terminée</span>
-                            </div>
-                            <div class="expo-date">
-                                📅 1 juin 2025 - 20 juillet 2025
-                            </div>
-                        </div>
+                <div class="expo-details">
+                    <div class="header-inline">
+                        <h3>Pixel Medina</h3>
+                        <span class="status-badge gray">Terminée</span>
                     </div>
-                    <p class="expo-desc">Une exploration de la vie urbaine moderne à travers différents médiums artistiques.</p>
-                    <div class="expo-oeuvres">
-                        <span class="expo-nb">🖼️ 3 œuvre(s) exposée(s)</span>
-                        <div class="expo-thumbnails">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                        </div>
+
+                    <p class="date-info">📅 1 avril 2025 - 15 mai 2025</p>
+
+                    <p class="description">
+                        Exposition collective présentant les œuvres les plus prometteuses de nos étudiants en arts.
+                        <br><strong>Artiste Phare : Douaa Ben Jha</strong>
+                    </p>
+
+                    <div class="stats">
+                        <span>🖼️ 9 œuvre(s) exposée(s)</span>
                     </div>
+
+                    <div class="preview-grid">
+                        <div class="thumb"><img src="http://127.0.0.1:8000/storage/oeuvres/chateau_poudlard.jpeg"></div>
+                        <div class="thumb"><img src="http://127.0.0.1:8000/storage/oeuvres/guitare_foret.jpeg"></div>
+                        <div class="thumb"><img src="http://127.0.0.1:8000/storage/oeuvres/pont_nuit.jpeg"></div>
+                        <div class="thumb"><img src="http://127.0.0.1:8000/storage/oeuvres/maison_campagne.jpeg"></div>
+                    </div>
+
+                    <a href="galerie.html?artiste=7" class="btn-explorer">Explorer l'exposition</a>
                 </div>
-            </div>
-
-            <!-- EXPOSITION 3 -->
-            <div class="expo-carte">
-                <img src="https://placehold.co/372x465" alt="Abstraction & Émotion">
-                <div class="expo-info">
-                    <div class="expo-header">
-                        <div>
-                            <div class="expo-titre-row">
-                                <h3>Abstraction & Émotion</h3>
-                                <span class="badge-statut">Terminée</span>
-                            </div>
-                            <div class="expo-date">
-                                📅 15 mars 2025 - 30 avril 2025
-                            </div>
-                        </div>
-                    </div>
-                    <p class="expo-desc">Plongée dans l'art abstrait et son pouvoir d'évoquer des émotions profondes.</p>
-                    <div class="expo-oeuvres">
-                        <span class="expo-nb">🖼️ 3 œuvre(s) exposée(s)</span>
-                        <div class="expo-thumbnails">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- EXPOSITION 4 -->
-            <div class="expo-carte">
-                <img src="https://placehold.co/372x496" alt="Digital Dreams">
-                <div class="expo-info">
-                    <div class="expo-header">
-                        <div>
-                            <div class="expo-titre-row">
-                                <h3>Digital Dreams</h3>
-                                <span class="badge-statut">Terminée</span>
-                            </div>
-                            <div class="expo-date">
-                                📅 1 mai 2025 - 15 juin 2025
-                            </div>
-                        </div>
-                    </div>
-                    <p class="expo-desc">Exposition dédiée à l'art numérique et ses possibilités infinies.</p>
-                    <div class="expo-oeuvres">
-                        <span class="expo-nb">🖼️ 2 œuvre(s) exposée(s)</span>
-                        <div class="expo-thumbnails">
-                            <img src="https://placehold.co/126x126" alt="">
-                            <img src="https://placehold.co/126x126" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- BANNIERE CTA -->
-        <div class="cta-banner">
-            <h3>Vous êtes artiste étudiant ?</h3>
-            <p>Rejoignez notre plateforme et exposez vos créations lors de nos prochaines expositions virtuelles</p>
-            <a href="contact.html" class="btn-primary">Contactez-nous</a>
-        </div>
-
+            </section>
+        </main>
     </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-brand">
-                <h3>ArtPortfolio</h3>
-                <p>Plateforme dédiée aux artistes étudiants pour partager et exposer leurs créations.</p>
-            </div>
-            <div class="footer-nav">
-                <h4>Navigation</h4>
-                <ul>
-                    <li><a href="galerie.html">Galerie</a></li>
-                    <li><a href="expositions.html">Expositions</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="admin.html">Admin</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <h4>Contact</h4>
-                <p>Pour toute question ou collaboration,<br>utilisez notre formulaire de contact.</p>
-            </div>
+    <section class="cta-section">
+    <div class="cta-content">
+        <h2>Vous êtes artiste étudiant ?</h2>
+        <p>Rejoignez notre plateforme et exposez vos créations lors de nos prochaines expositions virtuelles</p>
+        <a href="contact.html" class="btn-contact-white">Contactez-nous</a>
+    </div>
+</section>
+
+<footer class="main-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+ <p>Plateforme dédiée aux artistes étudiants pour partager et exposer leurs créations.</p>
         </div>
-        <div class="footer-bottom">
-            © 2026 ArtPortfolio. Tous droits réservés.
+
+        <div class="footer-nav">
+            <h4>Navigation</h4>
+            <ul>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="Expositions_Virtuelles.html">Expositions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="admin.html">Admin</a></li>
+            </ul>
         </div>
-    </footer>
-    <script src="js/config.js"></script>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Pour toute question ou collaboration, utilisez notre formulaire de contact.</p>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>
